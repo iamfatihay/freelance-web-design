@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  margin: 0;
+}
+i {
+  color: var(--renk1) !important;
+}
+/* ....---------------ROOT  KISMI -------------......... */
+:root {
+  --renk1: rgb(134, 1, 116);
+  --renk2: rgba(134, 1, 116, 0.849);
+  --renk3: rgb(144, 144, 144);
+  --renk4: rgb(211, 211, 211);
+  --renk5: rgb(37, 37, 37);
+}
+
+/* ....---------------NAVBAR KISMI -------------......... */
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link i {
+  color: purple;
+  margin-right: 10px;
+}
+
+#navbarNavDropdown {
+  margin-right: 10px;
+}
+
+/* ....---------------MAIN KISMI -------------......... */
+main {
+  background-image: url("../images/header-bg.jpeg");
+  height: 100vh;
+  width: 100%;
+  /*margin-top: 40px ; --->bunu yazinca navbari baz alarak yukardan margin veriyor. Navbara position:fixed dedigim icin Nedeni ne bunun ? */
+  background-size: cover;
+  text-align: center;
+}
+
+.yazilar p:nth-child(1) {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.yazilar p:nth-child(2) {
+  font-size: 1rem;
+}
+
+.yazilar button {
+  background-color: rgba(15, 14, 14, 0.5);
+  border: 2px solid white;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.fa-computer-mouse {
+  font-size: 2rem;
+  color: white;
+}
+h5 span.isim {
+  color: var(--renk1) !important;
+  font-style: italic;
+}
+
+section h3 {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+
+/* ....---------------NEDEN SELIM KISMI -------------......... */
+
+.selim-img img {
+  width: 100%;
+  background-color: aqua;
+}
+
+.icons a {
+  border: 1px solid var(--renk3);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.icons i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--renk1);
+}
+
+/* ....---------------HIZMETLERIMIZ KISMI -------------......... */
