@@ -208,6 +208,9 @@ nav .nav-referanslar button {
   margin-top: -12px;
   color: var(--renk4);
 }
+.referanslar nav {
+  margin-bottom: 40px;
+}
 
 /* resimler */
 
@@ -215,6 +218,18 @@ nav .nav-referanslar button {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid black;
+
   border-radius: 15px;
+}
+
+.tüm-resimler {
+  display: flex !important;
+  flex-direction: row;
+  outline: 0 !important;
+  border: none !important;
+}
+
+.tüm-resimler div {
+  border: none !important;
+  outline: 0;
 }
