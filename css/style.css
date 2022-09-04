@@ -5,9 +5,7 @@
 body {
   margin: 0;
 }
-i {
-  color: var(--renk1) !important;
-}
+
 /* ....---------------ROOT  KISMI -------------......... */
 :root {
   --renk1: rgb(134, 1, 116);
@@ -18,7 +16,9 @@ i {
 }
 
 /* ....---------------NAVBAR KISMI -------------......... */
-
+.navbar {
+  z-index: 10;
+}
 .nav-link {
   color: black !important;
 }
@@ -103,3 +103,40 @@ section h3 {
 }
 
 /* ....---------------HIZMETLERIMIZ KISMI -------------......... */
+
+.hizmetlerimiz .cizgi {
+  width: 65px;
+  height: 3px;
+  background-color: var(--renk2) !important;
+  margin: 10px auto;
+}
+
+.baslik-yazi {
+  margin-top: -10px;
+}
+.fa-arrow-down-up-lock {
+  color: var(--renk1) !important;
+}
+.container-fluid {
+  padding: 0 90px !important;
+}
+
+.card {
+  border: 1px solid var(--renk3) !important;
+  border-radius: 15px !important;
+  padding: 8px;
+}
+
+.card i {
+  margin-top: 15px;
+  color: var(--renk3) !important;
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--renk3);
+}
