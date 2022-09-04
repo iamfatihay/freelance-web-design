@@ -178,3 +178,43 @@ section h3 {
 .besinci-kisim .alt-yazi2 b {
   font-weight: 1000;
 }
+
+/* ....---------------REFERANSLARIMIZ KISMI -------------......... */
+nav .nav-referanslar {
+  margin: auto;
+  flex-wrap: nowrap !important;
+}
+
+nav .nav-referanslar button {
+  color: var(--renk1) !important;
+}
+
+.referanslar {
+  margin-top: 100px;
+}
+.referanslar header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.referanslar h3 {
+  font-size: 2rem !important;
+  letter-spacing: 8px;
+  margin-top: 12px;
+  font-weight: 900 !important;
+}
+
+.referanslar p {
+  margin-top: -12px;
+  color: var(--renk4);
+}
+
+/* resimler */
+
+.referanslar img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid black;
+  border-radius: 15px;
+}
