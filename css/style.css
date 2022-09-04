@@ -235,7 +235,27 @@ nav .nav-referanslar button {
 }
 
 /*----------------------------YEDINCI ILETISIM KISMI -------------------*/
+/*Baslik Kismi */
+
+.baslik-7 h3 {
+  letter-spacing: 8px;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.baslik-7 p {
+  color: var(--renk3);
+  margin-top: -12px;
+}
+
+/*icons kisim */
+
+.icons-7 div i {
+  color: var(--renk1) !important;
+}
+/*Form Kisim */
 .iletisim {
+  padding-top: 100px !important ;
   margin-top: 100px;
   background-color: var(--renk4);
 }
