@@ -282,3 +282,58 @@ nav .nav-referanslar button {
   font-weight: 800;
   border: 1px solid white;
 }
+
+/*-------------------------FOOTER-------------------------*/
+
+footer {
+  background-color: var(--renk5) !important;
+  flex-direction: column;
+}
+
+footer .footer__icons {
+  margin-top: 60px;
+
+  margin: 3rem auto 1rem auto;
+}
+
+footer a {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  text-align: center;
+  padding-top: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+footer i {
+  font-size: 24px;
+  color: black;
+}
+
+.copy__part {
+  margin: 0 auto 4rem auto;
+}
+
+/*SAG ALT TARAF SABIT ICONLAR */
+
+.sabit--icon1 {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background-color: var(--renk2);
+  z-index: 30;
+  bottom: 80px;
+  right: 18px;
+}
+
+.sabit--icon2 {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background-color: var(--renk2);
+  z-index: 20;
+  bottom: 18px;
+  right: 18px;
+}
