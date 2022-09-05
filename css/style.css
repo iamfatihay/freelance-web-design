@@ -326,6 +326,7 @@ footer i {
   z-index: 30;
   bottom: 80px;
   right: 18px;
+  padding-top: 14px;
 }
 
 .sabit--icon2 {
@@ -336,4 +337,15 @@ footer i {
   z-index: 20;
   bottom: 18px;
   right: 18px;
+  padding-top: 12px;
+}
+
+.sabit--icon1 i {
+  font-size: 20px;
+  color: white;
+}
+
+.sabit--icon2 {
+  font-size: 20px;
+  color: white;
 }
