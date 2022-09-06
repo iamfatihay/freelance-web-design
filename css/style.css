@@ -415,7 +415,7 @@ footer i {
   background-color: var(--renk2);
 }
 
-/**RESIMLER AFTER-BEFORE KISMI ****/
+/**RESIMLER AFTER-BEFORE KISMI ***
 .tüm-resimler .col {
   position: relative;
 }
@@ -425,19 +425,20 @@ footer i {
   content: "";
   background-color: var(--renk5);
   position: absolute;
-  left: 12px;
+  left: 0;
   opacity: 0;
 }
 
 .tüm-resimler .col:hover::after {
+  display: fixed;
   opacity: 0.5;
   transition: 1s;
   transition-timing-function: ease-in-out;
-  transition-delay: 1s;
-  transition: width 2s, height 2s, transform 2s;
-  border-radius: 15px;
-}
 
+  border-radius: 15px;
+  width: 100%;
+}
+*/
 /***** CONTACT  *********/
 
 .contact__button:hover {
