@@ -57,7 +57,11 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#neden-ben-kismi-boslukId"
+                >
                   <i
                     class="fa-sharp fa-solid fa-info"
                     style="font-size: 20px; font-weight: 800"
@@ -69,7 +73,7 @@
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="#hizmetlerimizId"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -77,27 +81,49 @@
                   <i class="fa-sharp fa-solid fa-pen-ruler"></i> Hizmetler
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Hizmet1</a></li>
-                  <li><a class="dropdown-item" href="#">Hizmet2</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Hizmet3</a>
+                    <a class="dropdown-item" href="#navbar-bosluk-konumId"
+                      >Hizmet1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#navbar-bosluk-konumId"
+                      >Hizmet2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#navbar-bosluk-konumId"
+                      >Hizmet3</a
+                    >
                   </li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#müsteriler-kismi-boslukId"
+                >
                   <i class="fa-solid fa-users"></i>Müsteriler
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#referanslar-kismi-boslukId"
+                >
                   <i class="fa-solid fa-list"></i>Referanslar
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#iletisimId"
+                >
                   <i class="fa-solid fa-phone-flip"></i>Iletisim
                 </a>
               </li>
@@ -109,10 +135,10 @@
 
     <!------------------------------ NAVBAR BITIS ------------------------------>
 
-    <!------------------------------ IKINCI KISIM BASLANGIC ------------------------------>
+    <!------------------------------ IKINCI KISIM (MAIN) BASLANGIC ------------------------------>
 
     <main
-      class="d-flex align-items-center justify-content-center text-white w-100"
+      class="d-flex align-items-center justify-content-center text-white w-100 bg-black"
     >
       <div class="yazilar">
         <p>Hosgeldiniz</p>
@@ -130,12 +156,14 @@
     </main>
 
     <!------------------------------ ÜCÜNCÜ KISIM BASLANGIC ------------------------------>
+    <div class="neden-ben-kismi-bosluk" id="neden-ben-kismi-boslukId"></div>
+    <!--Navbarin basligin üstüne binmemesi icin -->
     <section class="row m-5">
       <div class="col-md-5 col-sm-12 selim-img me-5 mb-sm-5">
         <img src="./images/about.jpeg" alt="" />
       </div>
       <div class="col-md-6 col-sm-12 aciklama text-start">
-        <h3>Neden Ben</h3>
+        <h3 id="neden-ben">Neden Ben</h3>
         <h5>Merhaba! <span class="isim">Ben Dogukan.</span></h5>
         <p class="text-secondary">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
@@ -167,8 +195,9 @@
     </section>
 
     <!------------------------------ DÖRDÜNCÜ(HIZMETLERIMIZ) KISMI BASLIYOR------------------------------>
+    <div class="navbar-bosluk-konum" id="navbar-bosluk-konumId"></div>
 
-    <section class="hizmetlerimiz">
+    <section class="hizmetlerimiz" id="hizmetlerimizId">
       <div class="baslik text-center mt-5">
         <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
         <h2>Hizmetlerimiz</h2>
@@ -265,7 +294,9 @@
     </section>
 
     <!------------------------------ BESINCI(MÜSTERILERIMIZ NE DEDI) KISMI BASLIYOR------------------------------>
-    <section class="besinci-kisim">
+    <div id="müsteriler-kismi-boslukId"></div>
+
+    <section class="besinci-kisim" id="müsterilerId">
       <div class="container-fluid mt-5 text-center p-3">
         <div class="5-yazilar">
           <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x mb-2"></i>
@@ -285,9 +316,9 @@
 
     <!------------------------------ ALTINCI KISIM BASLIYOR------------------------------>
     <!--NAVBAR BEHAVIOUR KISMINDA ALINTI-->
-
+    <div id="referanslar-kismi-boslukId"></div>
     <!--MENÜ KISMI -->
-    <div class="container-fluid referanslar">
+    <div class="container-fluid referanslar" id="referanslarId">
       <header>
         <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
         <h3>Referanslarimiz</h3>
@@ -374,19 +405,19 @@
             <div
               class="tüm-resimler row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
             >
-              <div class="col mb-3">
+              <div class="resim1 col mb-3">
                 <img class="img-thumbnail" src="./images/work-1.jpeg" alt="" />
               </div>
 
-              <div class="col mb-3">
+              <div class="resim2 col mb-3">
                 <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
               </div>
 
-              <div class="col mb-3">
+              <div class="resim3 col mb-3">
                 <img class="img-thumbnail" src="./images/work-3.jpeg" alt="" />
               </div>
 
-              <div class="col mb-3">
+              <div class="resim4 col mb-3">
                 <a href="./images/work-4.jpeg">
                   <img
                     class="img-thumbnail"
@@ -396,11 +427,11 @@
                 </a>
               </div>
 
-              <div class="col col-lg-6 mt-lg-2">
+              <div class="resim5 col col-lg-6 mt-lg-2">
                 <img class="img-thumbnail" src="./images/work-5.jpeg" alt="" />
               </div>
 
-              <div class="col col-lg-6 mt-lg-2">
+              <div class="resim6 col col-lg-6 mt-lg-2">
                 <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
               </div>
             </div>
@@ -484,7 +515,7 @@
     </div>
 
     <!------------------------------ YEDINCI KISIM(ILETISIM) BASLIYOR------------------------------>
-    <div class="container-fluid iletisim">
+    <div class="container-fluid iletisim" id="iletisimId">
       <!-------BASLIK KISMI------->
       <div class="baslik-7 text-center">
         <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
@@ -499,17 +530,17 @@
         <div class="col telephone">
           <i class="fa-solid fa-phone-flip fa-2x"></i>
           <h4>Telefon</h4>
-          <p>+90(555)555 55 55</p>
+          <a href="#">+90(555)555 55 55</a>
         </div>
         <div class="col whatsappp">
           <i class="fa-brands fa-whatsapp fa-2x"></i>
           <h4>Whatsapp</h4>
-          <p>+90(555)555 55 55</p>
+          <a href="#">+90(555)555 55 55</a>
         </div>
         <div class="col email">
           <i class="fa-solid fa-envelope fa-2x"></i>
           <h4>Email</h4>
-          <p>+90(555)555 55 55</p>
+          <a href="mailto:dogukan@gmail.com">dogukan@gmail.com</a>
         </div>
       </div>
 
@@ -547,10 +578,10 @@
             class="w-100 ps-2 pt-3"
           ></textarea>
         </div>
-        <button>MESAJI GÖNDER</button>
+        <button class="contact__button">MESAJI GÖNDER</button>
       </form>
     </div>
-    <!------------------------------ FOOTER KISIMBASLIYOR------------------------------>
+    <!------------------------------ FOOTER KISIM BASLIYOR------------------------------>
 
     <footer class="d-flex justify-content-center">
       <div class="footer__icons">

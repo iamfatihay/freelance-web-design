@@ -16,8 +16,18 @@ body {
 }
 
 /* ....---------------NAVBAR KISMI -------------......... */
+nav .right {
+  margin-right: -60px;
+  color: black !important;
+}
+.right button {
+  color: purple !important; /*tiklandiginda border rengi */
+}
 .navbar {
   z-index: 10;
+}
+.logo {
+  margin-left: -80px;
 }
 .nav-link {
   color: black !important;
@@ -29,12 +39,13 @@ body {
 }
 
 #navbarNavDropdown {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* ....---------------MAIN KISMI -------------......... */
 main {
   background-image: url("../images/header-bg.jpeg");
+  opacity: 0.8;
   height: 100vh;
   width: 100%;
   /*margin-top: 40px ; --->bunu yazinca navbari baz alarak yukardan margin veriyor. Navbara position:fixed dedigim icin Nedeni ne bunun ? */
@@ -55,7 +66,7 @@ main {
   background-color: rgba(15, 14, 14, 0.5);
   border: 2px solid white;
   width: 200px;
-  height: 50px;
+  height: 60px;
   border-radius: 100px;
   color: white;
   font-weight: 600;
@@ -77,7 +88,11 @@ section h3 {
 }
 
 /* ....---------------NEDEN SELIM KISMI -------------......... */
-
+.neden-ben-kismi-bosluk {
+  /*Yapis amaci ayni- navbarin üstüne binmemesi */
+  width: 100%;
+  height: 80px;
+}
 .selim-img img {
   width: 100%;
   background-color: aqua;
@@ -103,7 +118,10 @@ section h3 {
 }
 
 /* ....---------------HIZMETLERIMIZ KISMI -------------......... */
-
+.navbar-bosluk-konum {
+  height: 80px; /*Bunu navbar asagi geldiginde hizmetlerimiz kismi gözükmedigi icin bosluk olarak verdim ve tiklandiginda bu bölgeye cagirdim */
+  width: 100%;
+}
 .hizmetlerimiz .cizgi {
   width: 65px;
   height: 3px;
@@ -142,7 +160,10 @@ section h3 {
 }
 
 /* ....---------------MÜSTERILERIMIZ NE DEDI(BESINCI) KISMI -------------......... */
-
+#müsteriler-kismi-boslukId {
+  width: 100%;
+  height: 50px;
+}
 .besinci-kisim {
   background-color: var(--renk4);
   padding: 30px;
@@ -180,6 +201,11 @@ section h3 {
 }
 
 /* ....---------------REFERANSLARIMIZ KISMI -------------......... */
+/*Nav tabinin basligin üstüne binmemesi icin */
+#referanslar-kismi-boslukId {
+  width: 100%;
+  height: 50px;
+}
 nav .nav-referanslar {
   margin: auto;
   flex-wrap: nowrap !important;
@@ -252,6 +278,14 @@ nav .nav-referanslar button {
 
 .icons-7 div i {
   color: var(--renk1) !important;
+}
+
+.icons-7 a {
+  text-decoration: none;
+  color: var(--renk3);
+}
+.iletisim .col a {
+  font-size: 1rem;
 }
 /*Form Kisim */
 .iletisim {
@@ -348,4 +382,66 @@ footer i {
 .sabit--icon2 {
   font-size: 20px;
   color: white;
+}
+
+/*-------HOVER KISIM ------------*/
+
+/* NAVBAR HOVER */
+.logo img:hover {
+  cursor: pointer;
+}
+
+.collapse .navbar-nav li.nav-item a:hover {
+  background-color: var(--renk2);
+  transition: 0.5s;
+  border-radius: 15px;
+  color: white !important;
+}
+
+.collapse .navbar-nav li.nav-item a:hover i {
+  color: white;
+  background-color: var(--renk1);
+  border-radius: 10px;
+}
+.collapse ul.dropdown-menu li a:hover {
+  background-color: var(--renk1);
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+/*********** MAIN KISMI HOVER ********/
+
+.yazilar button:hover {
+  background-color: var(--renk2);
+}
+
+/**RESIMLER AFTER-BEFORE KISMI ****/
+.tüm-resimler .col {
+  position: relative;
+}
+.tüm-resimler .col::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: var(--renk5);
+  position: absolute;
+  left: 12px;
+  opacity: 0;
+}
+
+.tüm-resimler .col:hover::after {
+  opacity: 0.5;
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  transition: width 2s, height 2s, transform 2s;
+  border-radius: 15px;
+}
+
+/***** CONTACT  *********/
+
+.contact__button:hover {
+  background-color: var(--renk2);
+  transition-duration: 0.5s;
+  cursor: unset;
 }
