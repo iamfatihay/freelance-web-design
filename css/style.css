@@ -45,12 +45,13 @@ nav .right {
 /* ....---------------MAIN KISMI -------------......... */
 main {
   background-image: url("../images/header-bg.jpeg");
-  opacity: 0.8;
+
   height: 100vh;
   width: 100%;
   /*margin-top: 40px ; --->bunu yazinca navbari baz alarak yukardan margin veriyor. Navbara position:fixed dedigim icin Nedeni ne bunun ? */
   background-size: cover;
   text-align: center;
+  position: relative;
 }
 
 .yazilar p:nth-child(1) {
@@ -251,13 +252,13 @@ nav .nav-referanslar button {
 .tüm-resimler {
   display: flex !important;
   flex-direction: row;
-  outline: 0 !important;
+  outline: none !important;
   border: none !important;
 }
 
 .tüm-resimler div {
   border: none !important;
-  outline: 0;
+  outline: none !important;
 }
 
 /*----------------------------YEDINCI ILETISIM KISMI -------------------*/
@@ -420,22 +421,30 @@ footer i {
   position: relative;
 }
 .tüm-resimler .col::after {
+  content: "PROJE1";
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  display: flex;
   width: 100%;
   height: 100%;
-  content: "";
   background-color: var(--renk5);
-  position: absolute;
-  left: 0;
+  transform: scale(0);
+  transform: translate(0px, 0px);
+
   opacity: 0;
 }
 
 .tüm-resimler .col:hover::after {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 15px;
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  transform: translate(0px, 0px);
+  transition: all 0.5s ease-in;
+  opacity: 0.8;
+  align-items: center;
 }
-
 /*WEB-TASARIM */
 
 .web-tasarim .col {
