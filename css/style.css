@@ -1,566 +1,596 @@
 * {
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
 }
 body {
-  margin: 0;
+    margin: 0;
 }
 
-/* ....---------------ROOT  KISMI -------------......... */
+/* ....---------------ROOT VARIABLES -------------......... */
 :root {
-  --renk1: rgb(134, 1, 116);
-  --renk2: rgba(134, 1, 116, 0.849);
-  --renk3: rgb(144, 144, 144);
-  --renk4: rgb(211, 211, 211);
-  --renk5: rgb(37, 37, 37);
+    --renk1: rgb(134, 1, 116);
+    --renk2: rgba(134, 1, 116, 0.849);
+    --renk3: rgb(144, 144, 144);
+    --renk4: rgb(211, 211, 211);
+    --renk5: rgb(37, 37, 37);
 }
 
-/* ....---------------NAVBAR KISMI -------------......... */
+/* ....---------------NAVBAR SECTION -------------......... */
 nav .right {
-  margin-right: -60px;
-  color: black !important;
+    margin-right: -60px;
+    color: black !important;
 }
 .right button {
-  color: purple !important; /*tiklandiginda border rengi */
+    color: purple !important; /*tiklandiginda border rengi */
 }
 .navbar {
-  z-index: 10;
+    z-index: 10;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-toggle {
-  margin-right: 40px;
+    margin-right: 40px;
 }
 .nav-link {
-  color: black !important;
+    color: black !important;
 }
 
-.nav-link i {
-  color: purple;
-  margin-right: 10px;
+.nav-link i,
+.navbar-icon {
+    color: purple;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 #navbarNavDropdown {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-collapse {
-    height: 12vh;
-  }
-  ul.navbar-nav {
-    background-color: var(--renk4) !important;
-    padding: 10px 0 0 20px;
-    width: 120%;
-  }
-  ul.navbar-nav li ul.dropdown-menu {
-    background-color: var(--renk4);
-    margin-left: 30px;
-    border: none;
-  }
+    .navbar-collapse {
+        height: 12vh;
+    }
+    ul.navbar-nav {
+        background-color: var(--renk4) !important;
+        padding: 10px 0 0 20px;
+        width: 120%;
+    }
+    ul.navbar-nav li ul.dropdown-menu {
+        background-color: var(--renk4);
+        margin-left: 30px;
+        border: none;
+    }
 }
 
-/* ....---------------MAIN KISMI -------------......... */
+/* ....---------------MAIN SECTION -------------......... */
 main {
-  background-image: url("../images/header-bg.jpeg");
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  /*margin-top: 40px ; --->bunu yazinca navbari baz alarak yukardan margin veriyor. Navbara position:fixed dedigim icin Nedeni ne bunun ? */
-  background-size: cover;
-  text-align: center;
-  position: relative;
+    background-image: url("../images/header-bg.jpeg");
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    /*margin-top: 40px ; --->bunu yazinca navbari baz alarak yukardan margin veriyor. Navbara position:fixed dedigim icin Nedeni ne bunun ? */
+    background-size: cover;
+    text-align: center;
+    position: relative;
 }
 
 main::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.7;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
 }
 .yazilar {
-  z-index: 1;
+    z-index: 1;
 }
 .yazilar p:nth-child(1) {
-  font-size: 25px;
-  font-weight: 300;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .yazilar p:nth-child(2) {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .yazilar button {
-  background-color: rgba(15, 14, 14, 0.5);
-  border: 2px solid white;
-  width: 200px;
-  height: 60px;
-  border-radius: 100px;
-  color: white;
-  font-weight: 600;
-  margin-bottom: 30px;
+    background-color: rgba(15, 14, 14, 0.5);
+    border: 2px solid white;
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.yazilar button:hover {
+    background-color: var(--renk2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(134, 1, 116, 0.4);
 }
 
 .fa-computer-mouse {
-  font-size: 2rem;
-  color: white;
+    font-size: 2rem;
+    color: white;
 }
 h5 span.isim {
-  color: var(--renk1) !important;
-  font-style: italic;
+    color: var(--renk1) !important;
+    font-style: italic;
 }
 
 section h3 {
-  font-weight: 1000;
-  font-size: 2rem;
+    font-weight: 1000;
+    font-size: 2rem;
 }
 
 /* ....---------------NEDEN SELIM KISMI -------------......... */
 .neden-ben-kismi-bosluk {
-  /*Yapis amaci ayni- navbarin üstüne binmemesi */
-  width: 100%;
-  height: 80px;
+    /*Yapis amaci ayni- navbarin üstüne binmemesi */
+    width: 100%;
+    height: 80px;
 }
 .selim-img img {
-  width: 100%;
-  background-color: aqua;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.selim-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .icons a {
-  border: 1px solid var(--renk3);
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: inline-block;
-  font-size: 1.5rem;
-  position: relative;
-  margin-right: 1rem;
+    border: 1px solid var(--renk3);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: 1rem;
 }
 
 .icons i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--renk1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--renk1);
 }
 
 /* ....---------------HIZMETLERIMIZ KISMI -------------......... */
 .navbar-bosluk-konum {
-  height: 80px; /*Bunu navbar asagi geldiginde hizmetlerimiz kismi gözükmedigi icin bosluk olarak verdim ve tiklandiginda bu bölgeye cagirdim */
-  width: 100%;
+    height: 80px; /*Bunu navbar asagi geldiginde hizmetlerimiz kismi gözükmedigi icin bosluk olarak verdim ve tiklandiginda bu bölgeye cagirdim */
+    width: 100%;
 }
 .hizmetlerimiz .cizgi {
-  width: 65px;
-  height: 3px;
-  background-color: var(--renk2) !important;
-  margin: 10px auto;
+    width: 65px;
+    height: 3px;
+    background-color: var(--renk2) !important;
+    margin: 10px auto;
 }
 
 .baslik-yazi {
-  margin-top: -10px;
+    margin-top: -10px;
 }
 .fa-arrow-down-up-lock {
-  color: var(--renk1) !important;
+    color: var(--renk1) !important;
 }
 .container-fluid {
-  padding: 0 90px !important;
+    padding: 0 90px !important;
 }
 
 .card {
-  border: 1px solid var(--renk3) !important;
-  border-radius: 15px !important;
-  padding: 8px;
+    border: 1px solid var(--renk3) !important;
+    border-radius: 15px !important;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--renk1) !important;
 }
 
 .card i {
-  margin-top: 15px;
-  color: var(--renk3) !important;
-  margin-bottom: 20px;
+    margin-top: 15px;
+    color: var(--renk3) !important;
+    margin-bottom: 20px;
 }
 .card h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .card p {
-  font-size: 1rem;
-  color: var(--renk3);
+    font-size: 1rem;
+    color: var(--renk3);
 }
 
 /* ....---------------MÜSTERILERIMIZ NE DEDI(BESINCI) KISMI -------------......... */
 #müsteriler-kismi-boslukId {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 .besinci-kisim {
-  background-color: var(--renk4);
-  padding: 30px;
-  margin-top: 85px;
+    background-color: var(--renk4);
+    padding: 30px;
+    margin-top: 85px;
 }
 .besinci-kisim h3 {
-  letter-spacing: 8px;
-  font-weight: 1000;
+    letter-spacing: 8px;
+    font-weight: 1000;
 }
 .besinci-kisim img {
-  border-radius: 50%;
-  margin-bottom: 30px;
-  margin-top: 15px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 .besinci-kisim p {
-  margin-top: -12px;
-  color: var(--renk3);
+    margin-top: -12px;
+    color: var(--renk3);
 }
 
 .besinci-kisim .container-fluid {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .besinci-kisim .alt-yazi1 {
-  color: black !important;
-  font-style: italic;
+    color: black !important;
+    font-style: italic;
 }
 
 .besinci-kisim .alt-yazi2 {
-  color: black !important;
+    color: black !important;
 }
 .besinci-kisim .alt-yazi2 b {
-  font-weight: 1000;
+    font-weight: 1000;
 }
 
 /* ....---------------REFERANSLARIMIZ KISMI -------------......... */
 /*Nav tabinin basligin üstüne binmemesi icin */
 #referanslar-kismi-boslukId {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 nav .nav-referanslar {
-  margin: auto;
-  flex-wrap: nowrap !important;
+    margin: auto;
+    flex-wrap: nowrap !important;
 }
 
 nav .nav-referanslar button {
-  color: var(--renk1) !important;
+    color: var(--renk1) !important;
 }
 
 .referanslar {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 .referanslar header {
-  text-align: center;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .referanslar h3 {
-  font-size: 2rem !important;
-  letter-spacing: 8px;
-  margin-top: 12px;
-  font-weight: 900 !important;
+    font-size: 2rem !important;
+    letter-spacing: 8px;
+    margin-top: 12px;
+    font-weight: 900 !important;
 }
 
 .referanslar p {
-  margin-top: -12px;
-  color: var(--renk4);
+    margin-top: -12px;
+    color: var(--renk4);
 }
 .referanslar nav {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 /* resimler */
 
 .referanslar img {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  border-radius: 15px;
+    border-radius: 15px;
 }
 
 .tüm-resimler {
-  display: flex !important;
-  flex-direction: row;
-  outline: none !important;
-  border: none !important;
+    display: flex !important;
+    flex-direction: row;
+    outline: none !important;
+    border: none !important;
 }
 
 .tüm-resimler div {
-  border: none !important;
-  outline: none !important;
+    border: none !important;
+    outline: none !important;
 }
 
 /*----------------------------YEDINCI ILETISIM KISMI -------------------*/
 /*Baslik Kismi */
 
 .baslik-7 h3 {
-  letter-spacing: 8px;
-  font-weight: 800;
-  font-size: 2rem;
+    letter-spacing: 8px;
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .baslik-7 p {
-  color: var(--renk3);
-  margin-top: -12px;
+    color: var(--renk3);
+    margin-top: -12px;
 }
 
 /*icons kisim */
 
 .icons-7 div i {
-  color: var(--renk1) !important;
+    color: var(--renk1) !important;
 }
 
 .icons-7 a {
-  text-decoration: none;
-  color: var(--renk3);
+    text-decoration: none;
+    color: var(--renk3);
 }
 .iletisim .col a {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 /*Form Kisim */
 .iletisim {
-  padding-top: 100px !important ;
-  margin-top: 100px;
-  background-color: var(--renk4);
+    padding-top: 100px !important ;
+    margin-top: 100px;
+    background-color: var(--renk4);
 }
 .iletisim .row {
-  width: 80%;
+    width: 80%;
 }
 .iletisim input {
-  border-radius: 16px !important;
-  height: 52px;
+    border-radius: 16px !important;
+    height: 52px;
 }
 
 .iletisim textarea {
-  border-radius: 16px;
+    border-radius: 16px;
 }
 
 .iletisim button {
-  width: 195px;
-  height: 50px;
-  border-radius: 3rem;
-  text-align: center;
-  margin: 10px auto 60px auto;
-  background-color: rgb(85, 85, 85);
-  color: white;
-  font-weight: 800;
-  border: 1px solid white;
+    width: 195px;
+    height: 50px;
+    border-radius: 3rem;
+    text-align: center;
+    margin: 10px auto 60px auto;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-weight: 800;
+    border: 1px solid white;
 }
 
 /*-------------------------FOOTER-------------------------*/
 
 footer {
-  background-color: var(--renk5) !important;
-  flex-direction: column;
+    background-color: var(--renk5) !important;
+    flex-direction: column;
 }
 
 footer .footer__icons {
-  margin-top: 60px;
+    margin-top: 60px;
 
-  margin: 3rem auto 1rem auto;
+    margin: 3rem auto 1rem auto;
 }
 
 footer a {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  background-color: white;
-  text-align: center;
-  padding-top: 12px;
-  margin-right: 10px;
-  border-radius: 50%;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    text-align: center;
+    padding-top: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
 footer i {
-  font-size: 24px;
-  color: black;
+    font-size: 24px;
+    color: black;
 }
 
 .copy__part {
-  margin: 0 auto 4rem auto;
+    margin: 0 auto 4rem auto;
 }
 
 /*SAG ALT TARAF SABIT ICONLAR */
 
 .sabit--icon1 {
-  position: fixed;
-  width: 48px;
-  height: 48px;
-  background-color: var(--renk2);
-  z-index: 30;
-  bottom: 80px;
-  right: 18px;
-  padding-top: 14px;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    background-color: var(--renk2);
+    z-index: 30;
+    bottom: 80px;
+    right: 18px;
+    padding-top: 14px;
 }
 
 .sabit--icon2 {
-  position: fixed;
-  width: 48px;
-  height: 48px;
-  background-color: var(--renk2);
-  z-index: 20;
-  bottom: 18px;
-  right: 18px;
-  padding-top: 12px;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    background-color: var(--renk2);
+    z-index: 20;
+    bottom: 18px;
+    right: 18px;
+    padding-top: 12px;
 }
 
 .sabit--icon1 i {
-  font-size: 20px;
-  color: white;
+    font-size: 20px;
+    color: white;
 }
 
 .sabit--icon2 {
-  font-size: 20px;
-  color: white;
+    font-size: 20px;
+    color: white;
 }
 
 /*-------HOVER KISIM ------------*/
 
 /* NAVBAR HOVER */
 .logo img:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .collapse .navbar-nav li.nav-item a:hover {
-  background-color: var(--renk2);
-  transition: 0.5s;
-  border-radius: 15px;
-  color: white !important;
+    background-color: var(--renk2);
+    transition: 0.5s;
+    border-radius: 15px;
+    color: white !important;
 }
 
 .collapse .navbar-nav li.nav-item a:hover i {
-  color: white;
-  background-color: var(--renk1);
-  border-radius: 10px;
+    color: white;
+    background-color: var(--renk1);
+    border-radius: 10px;
 }
 .collapse ul.dropdown-menu li a:hover {
-  background-color: var(--renk1);
-  transition: 0.5s;
-  border-radius: 15px;
+    background-color: var(--renk1);
+    transition: 0.5s;
+    border-radius: 15px;
 }
 
 /*********** MAIN KISMI HOVER ********/
 
 .yazilar button:hover {
-  background-color: var(--renk2);
+    background-color: var(--renk2);
 }
 
 /**RESIMLER AFTER-BEFORE KISMI ****/
 
 .tüm-resimler .col {
-  position: relative;
+    position: relative;
 }
 
 .tüm-resimler .col::after {
-  content: "PROJELER";
-  align-items: flex-end;
-  justify-content: center;
-  color: white;
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: var(--renk5);
-  opacity: 0;
+    content: "PROJELER";
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--renk5);
+    opacity: 0;
 }
 
 .tüm-resimler .col:hover::after {
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-  align-items: center;
-  transition: opacity 3s, border-radius 1s;
-  border-radius: 15px;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    align-items: center;
+    transition: opacity 3s, border-radius 1s;
+    border-radius: 15px;
 }
 /*WEB-TASARIM */
 
 .web-tasarim .col {
-  position: relative;
+    position: relative;
 }
 .web-tasarim .col::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: var(--renk5);
-  position: absolute;
-  left: 0;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--renk5);
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 .web-tasarim .col:hover::after {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 15px;
+    opacity: 0.5;
+    transition-timing-function: ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
 }
 
 /***** GRAFIK-TASARIM *****/
 .grafik-tasarim .col {
-  position: relative;
+    position: relative;
 }
 .grafik-tasarim .col::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: var(--renk5);
-  position: absolute;
-  left: 0;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--renk5);
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 .grafik-tasarim .col:hover::after {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 15px;
+    opacity: 0.5;
+    transition-timing-function: ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
 }
 
 /********* SEO* ******* */
 .seo .col {
-  position: relative;
+    position: relative;
 }
 .seo .col::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: var(--renk5);
-  position: absolute;
-  left: 0;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--renk5);
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 .seo .col:hover::after {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 15px;
+    opacity: 0.5;
+    transition-timing-function: ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
 }
 
 /************* WORD-PRESS ***********/
 
 .word-press .col {
-  position: relative;
+    position: relative;
 }
 .word-press .col::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: var(--renk5);
-  position: absolute;
-  left: 0;
-  opacity: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: var(--renk5);
+    position: absolute;
+    left: 0;
+    opacity: 0;
 }
 
 .word-press .col:hover::after {
-  opacity: 0.5;
-  transition-timing-function: ease-in-out;
-  transition: 1s ease-in-out;
-  border-radius: 15px;
+    opacity: 0.5;
+    transition-timing-function: ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
 }
 
 /***** CONTACT  *********/
 
 .contact__button:hover {
-  background-color: var(--renk2);
-  transition-duration: 0.5s;
-  cursor: unset;
+    background-color: var(--renk2);
+    transition-duration: 0.5s;
+    cursor: unset;
 }
