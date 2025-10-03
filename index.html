@@ -1,610 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freelance Web Design</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Bootstrap CSS Linki -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
 
-    <!--FONT LINKI-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body id="sayfa--baslangic">
-    <!-- --------------NAVBAR KISMI ----------------------- -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatih - Professional Web Developer | Modern Responsive Websites</title>
 
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light position-fixed w-100"
-    >
-      <div class="logo">
-        <a class="navbar-brand" href="#"
-          ><img src="./images/logo.png" alt=""
-        /></a>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Professional web developer Fatih creates modern, responsive websites with SEO optimization. Specializing in custom web development, WordPress development, and digital solutions.">
+  <meta name="keywords"
+    content="web developer, responsive design, SEO, WordPress, modern websites, web development, UI/UX design, freelance web developer"
+    <meta name="author" content="Fatih">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Fatih - Professional Web Developer">
+  <meta property="og:description"
+    content="Creating modern, responsive websites with professional web development and SEO optimization services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fatih-webdesign.com">
+  <meta property="og:image" content="./images/about.jpeg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fatih - Professional Web Developer">
+  <meta name="twitter:description" content="Modern responsive web development services with SEO optimization">
+  <meta name="twitter:image" content="./images/about.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.png">
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <!--FONT LINK-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+</head>
+
+<body id="sayfa--baslangic">
+  <!-- --------------NAVBAR KISMI ----------------------- -->
+
+  <nav class="navbar navbar-expand-lg bg-white navbar-light position-fixed w-100">
+    <div class="logo">
+      <a class="navbar-brand" href="#" title="Fatih - Professional Web Developer"><img src="./images/logo.png"
+          alt="Fatih Web Development Logo" /></a>
+    </div>
+
+    <!------------------------------ NAVBAR SAG KISIM ------------------------------>
+
+    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#neden-ben-kismi-boslukId">
+            <i class="fa-sharp fa-solid fa-info navbar-icon"></i>About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#hizmetlerimizId" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-sharp fa-solid fa-pen-ruler"></i> Services
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#navbar-bosluk-konumId">Web Development</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#navbar-bosluk-konumId">SEO Services</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#navbar-bosluk-konumId">WordPress</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#müsteriler-kismi-boslukId">
+            <i class="fa-solid fa-users"></i>Clients
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#referanslar-kismi-boslukId">
+            <i class="fa-solid fa-list"></i>Portfolio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#iletisimId">
+            <i class="fa-solid fa-phone-flip"></i>Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!------------------------------ NAVBAR BITIS ------------------------------>
+
+  <!------------------------------ IKINCI KISIM (MAIN) BASLANGIC ------------------------------>
+
+  <main class="d-flex align-items-center justify-content-center text-white w-100 bg-black">
+    <div class="yazilar">
+      <p>Welcome</p>
+      <h1 class="display-5">Professional Web Development</h1>
+      <p class="mt-4">
+        Modern responsive web development, SEO optimization, and WordPress
+        development services by experienced professionals.
+      </p>
+
+      <button>Get Quote Now</button>
+      <a href="#neden-ben-kismi-boslukId" class="d-block" title="Scroll down to learn more">
+        <i class="fa-solid fa-computer-mouse"></i></a>
+    </div>
+  </main>
+
+  <!------------------------------ ÜCÜNCÜ KISIM BASLANGIC ------------------------------>
+  <div class="neden-ben-kismi-bosluk" id="neden-ben-kismi-boslukId"></div>
+  <!--To prevent navbar from overlapping the title -->
+  <section class="row m-5">
+    <div class="col-md-5 col-sm-12 selim-img me-5 mb-sm-5">
+      <img src="./images/about.jpeg" alt="" />
+    </div>
+    <div class="col-md-6 col-sm-12 aciklama text-start">
+      <h3 id="neden-ben">Why Choose Me</h3>
+      <h5>Hello! <span class="isim">I'm Fatih.</span></h5>
+      <p class="text-secondary">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+        quibusdam saepe unde ea quasi nobis! Maxime similique quod temporibus,
+        ea aliquam enim. Vero voluptatum deserunt magni id sapiente? Ab, sunt!
+      </p>
+
+      <p class="text-secondary">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic
+        eius repudiandae vero inventore provident ratione cupiditate
+        perferendis? Animi quo non vero, quis officia debitis obcaecati
+        aperiam enim reprehenderit eum.
+      </p>
+
+      <p class="text-secondary">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, earum
+        minima. Perspiciatis aut maxime sequi officiis dolor quia id libero
+        iusto consequuntur, perferendis consectetur molestias mollitia
+        doloremque aliquam et fugiat?
+      </p>
+
+      <div class="icons text-start">
+        <a href="#" title="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="Subscribe to our YouTube channel"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" title="Connect on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
       </div>
+    </div>
+  </section>
 
-      <!------------------------------ NAVBAR SAG KISIM ------------------------------>
+  <!------------------------------ DÖRDÜNCÜ(HIZMETLERIMIZ) KISMI BASLIYOR------------------------------>
+  <div class="navbar-bosluk-konum" id="navbar-bosluk-konumId"></div>
 
-      <button
-        class="navbar-toggler me-3"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <section class="hizmetlerimiz" id="hizmetlerimizId">
+    <div class="baslik text-center mt-5">
+      <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
+      <h2>Our Services</h2>
+      <p class="text-secondary baslik-yazi">
+        Professional web solutions tailored to your business needs.
+      </p>
+    </div>
 
+    <div class="container-fluid">
       <div
-        class="collapse navbar-collapse justify-content-end"
-        id="navbarNavDropdown"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="#neden-ben-kismi-boslukId"
-            >
-              <i
-                class="fa-sharp fa-solid fa-info"
-                style="font-size: 20px; font-weight: 800"
-              ></i
-              >Hakkimda</a
-            >
-          </li>
+        class="row hizmet-kutular d-flex text-center justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col mt-5">
+          <div class="card">
+            <i class="fa-sharp fa-solid fa-object-ungroup fa-3x"></i>
+            <h3>Web Development</h3>
+            <div class="cizgi"></div>
+            <p>
+              Modern, responsive web development solutions that work perfectly
+              on all devices. Custom coding with clean, efficient code
+              tailored to your business needs and user experience.
+            </p>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card">
+            <i class="fa-solid fa-palette fa-3x"></i>
+            <h3>Graphic Design</h3>
+            <div class="cizgi"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid consectetur amet reiciendis et officia quisquam
+              repellendus sequi minima quam debitis quasi rem qui facere iure
+              omnis quod quis, hic ab.
+            </p>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card">
+            <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+            <h3>SEO</h3>
+            <div class="cizgi"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid consectetur amet reiciendis et officia quisquam
+              repellendus sequi minima quam debitis quasi rem qui facere iure
+              omnis quod quis, hic ab.
+            </p>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="card">
+            <i class="fa-brands fa-wordpress fa-3x"></i>
+            <h3>Wordpress</h3>
+            <div class="cizgi"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid consectetur amet reiciendis et officia quisquam
+              repellendus sequi minima quam debitis quasi rem qui facere iure
+              omnis quod quis, hic ab.
+            </p>
+          </div>
+        </div>
+        <div class="col col-lg-6 mt-5">
+          <div class="card">
+            <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+            <h3>Responsive Design</h3>
+            <div class="cizgi"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid consectetur amet reiciendis et officia quisquam
+              repellendus sequi minima quam debitis quasi rem qui facere iure
+              omnis quod quis, hic ab.
+            </p>
+          </div>
+        </div>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#hizmetlerimizId"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fa-sharp fa-solid fa-pen-ruler"></i> Hizmetler
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#navbar-bosluk-konumId"
-                  >Hizmet1</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#navbar-bosluk-konumId"
-                  >Hizmet2</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#navbar-bosluk-konumId"
-                  >Hizmet3</a
-                >
-              </li>
-            </ul>
-          </li>
+        <div class="col col-lg-6 mt-5">
+          <div class="card">
+            <i class="fa-brands fa-twitter fa-3x"></i>
+            <h3>Social Media</h3>
+            <div class="cizgi"></div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aliquid consectetur amet reiciendis et officia quisquam
+              repellendus sequi minima quam debitis quasi rem qui facere iure
+              omnis quod quis, hic ab.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="#müsteriler-kismi-boslukId"
-            >
-              <i class="fa-solid fa-users"></i>Müsteriler
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="#referanslar-kismi-boslukId"
-            >
-              <i class="fa-solid fa-list"></i>Referanslar
-            </a>
-          </li>
+  <!------------------------------ BESINCI(MÜSTERILERIMIZ NE DEDI) KISMI BASLIYOR------------------------------>
+  <div id="müsteriler-kismi-boslukId"></div>
 
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#iletisimId">
-              <i class="fa-solid fa-phone-flip"></i>Iletisim
-            </a>
-          </li>
-        </ul>
+  <section class="besinci-kisim" id="müsterilerId">
+    <div class="container-fluid mt-5 text-center p-3">
+      <div class="5-yazilar">
+        <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x mb-2"></i>
+        <h3>What Our Clients Say</h3>
+        <p>Real feedback from satisfied customers who trust our services.</p>
+        <img src="./images/user-1.jpeg" alt="" />
+        <p class="alt-yazi1">
+          "Fatih delivered an exceptional website that perfectly captured our brand vision.
+          The design is modern, responsive, and user-friendly. Our online presence has
+          significantly improved, and we've seen a notable increase in customer engagement.
+          Highly recommended!"
+        </p>
+        <p class="alt-yazi2">-Sarah <b>Johnson</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------ ALTINCI KISIM BASLIYOR------------------------------>
+  <!--NAVBAR BEHAVIOUR KISMINDA ALINTI-->
+  <div id="referanslar-kismi-boslukId"></div>
+  <!--MENÜ KISMI -->
+  <div class="container-fluid referanslar" id="referanslarId">
+    <header>
+      <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
+      <h3>Our Portfolio</h3>
+      <p>Showcasing our best work and successful projects.</p>
+    </header>
+    <nav class="d-flex">
+      <div class="nav-referanslar nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-tümü-tab" data-bs-toggle="tab" data-bs-target="#nav-tümü" type="button"
+          role="tab" aria-controls="nav-tümü" aria-selected="true">
+          All
+        </button>
+        <button class="nav-link" id="nav-web-tasarim-tab" data-bs-toggle="tab" data-bs-target="#nav-web-tasarim"
+          type="button" role="tab" aria-controls="nav-web-tasarim" aria-selected="false">
+          Web Development
+        </button>
+        <button class="nav-link" id="nav-grafik-tasarim-tab" data-bs-toggle="tab" data-bs-target="#nav-grafik-tasarim"
+          type="button" role="tab" aria-controls="nav-grafik-tasarim" aria-selected="false">
+          Graphic Design
+        </button>
+        <button class="nav-link" id="nav-seo-tab" data-bs-toggle="tab" data-bs-target="#nav-seo" type="button"
+          role="tab" aria-controls="nav-seo" aria-selected="false">
+          SEO
+        </button>
+        <button class="nav-link" id="nav-wordpress-tab" data-bs-toggle="tab" data-bs-target="#nav-wordpress"
+          type="button" role="tab" aria-controls="nav-wordpress" aria-selected="false">
+          Wordpress
+        </button>
       </div>
     </nav>
 
-    <!------------------------------ NAVBAR BITIS ------------------------------>
+    <!--MENÜ KISMI BITIS-->
 
-    <!------------------------------ IKINCI KISIM (MAIN) BASLANGIC ------------------------------>
-
-    <main
-      class="d-flex align-items-center justify-content-center text-white w-100 bg-black"
-    >
-      <div class="yazilar">
-        <p>Hosgeldiniz</p>
-        <h1 class="display-5">Freelance Web Design</h1>
-        <p class="mt-4">
-          Mobil cihaz uyumlu web tasarimi, SEO, grafik tasarimi ve Wordpress
-          islerinizi profesyonellere birakin.
-        </p>
-
-        <button>Hemen Teklif Al</button>
-        <a href="#" class="d-block">
-          <i class="fa-solid fa-computer-mouse"></i
-        ></a>
-      </div>
-    </main>
-
-    <!------------------------------ ÜCÜNCÜ KISIM BASLANGIC ------------------------------>
-    <div class="neden-ben-kismi-bosluk" id="neden-ben-kismi-boslukId"></div>
-    <!--Navbarin basligin üstüne binmemesi icin -->
-    <section class="row m-5">
-      <div class="col-md-5 col-sm-12 selim-img me-5 mb-sm-5">
-        <img src="./images/about.jpeg" alt="" />
-      </div>
-      <div class="col-md-6 col-sm-12 aciklama text-start">
-        <h3 id="neden-ben">Neden Ben</h3>
-        <h5>Merhaba! <span class="isim">Ben Dogukan.</span></h5>
-        <p class="text-secondary">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-          quibusdam saepe unde ea quasi nobis! Maxime similique quod temporibus,
-          ea aliquam enim. Vero voluptatum deserunt magni id sapiente? Ab, sunt!
-        </p>
-
-        <p class="text-secondary">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae hic
-          eius repudiandae vero inventore provident ratione cupiditate
-          perferendis? Animi quo non vero, quis officia debitis obcaecati
-          aperiam enim reprehenderit eum.
-        </p>
-
-        <p class="text-secondary">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, earum
-          minima. Perspiciatis aut maxime sequi officiis dolor quia id libero
-          iusto consequuntur, perferendis consectetur molestias mollitia
-          doloremque aliquam et fugiat?
-        </p>
-
-        <div class="icons text-start">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!------------------------------ DÖRDÜNCÜ(HIZMETLERIMIZ) KISMI BASLIYOR------------------------------>
-    <div class="navbar-bosluk-konum" id="navbar-bosluk-konumId"></div>
-
-    <section class="hizmetlerimiz" id="hizmetlerimizId">
-      <div class="baslik text-center mt-5">
-        <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
-        <h2>Hizmetlerimiz</h2>
-        <p class="text-secondary baslik-yazi">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-      </div>
-
-      <div class="container-fluid">
-        <div
-          class="row hizmet-kutular d-flex text-center justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
-        >
-          <div class="col mt-5">
-            <div class="card">
-              <i class="fa-sharp fa-solid fa-object-ungroup fa-3x"></i>
-              <h3>Web Design</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
+    <!--RESIMLERIN EKLENDIGI KISIM-->
+    <div class="container text-center">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-tümü" role="tabpanel" aria-labelledby="nav-tümü-tab"
+          tabindex="0">
+          <!--TÜMÜ KISMI -->
+          <div class="tüm-resimler row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="resim1 col mb-3">
+              <img class="resim1-img img-thumbnail" src="./images/work-1.jpeg" alt="" />
             </div>
-          </div>
-          <div class="col mt-5">
-            <div class="card">
-              <i class="fa-solid fa-palette fa-3x"></i>
-              <h3>Grafik Design</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
-            </div>
-          </div>
-          <div class="col mt-5">
-            <div class="card">
-              <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-              <h3>SEO</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
-            </div>
-          </div>
-          <div class="col mt-5">
-            <div class="card">
-              <i class="fa-brands fa-wordpress fa-3x"></i>
-              <h3>Wordpress</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
-            </div>
-          </div>
-          <div class="col col-lg-6 mt-5">
-            <div class="card">
-              <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
-              <h3>Responsive Tasarim</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
-            </div>
-          </div>
 
-          <div class="col col-lg-6 mt-5">
-            <div class="card">
-              <i class="fa-brands fa-twitter fa-3x"></i>
-              <h3>Social Medya</h3>
-              <div class="cizgi"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aliquid consectetur amet reiciendis et officia quisquam
-                repellendus sequi minima quam debitis quasi rem qui facere iure
-                omnis quod quis, hic ab.
-              </p>
+            <div class="resim2 col mb-3">
+              <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
+            </div>
+
+            <div class="resim3 col mb-3">
+              <img class="img-thumbnail" src="./images/work-3.jpeg" alt="" />
+            </div>
+
+            <div class="resim4 col mb-3">
+              <img class="img-thumbnail" src="./images/work-4.jpeg" alt="" />
+            </div>
+
+            <div class="resim5 col col-lg-6 mt-lg-2">
+              <img class="img-thumbnail" src="./images/work-5.jpeg" alt="" />
+            </div>
+
+            <div class="resim6 col col-lg-6 mt-lg-2">
+              <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!------------------------------ BESINCI(MÜSTERILERIMIZ NE DEDI) KISMI BASLIYOR------------------------------>
-    <div id="müsteriler-kismi-boslukId"></div>
+        <!--WEB TASARIM FOTOGRAFLARI-->
+        <div class="tab-pane fade" id="nav-web-tasarim" role="tabpanel" aria-labelledby="nav-web-tasarim-tab"
+          tabindex="0">
+          <div class="web-tasarim row row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+              <img class="img-thumbnail" src="./images/work-1.jpeg" alt="" />
+            </div>
 
-    <section class="besinci-kisim" id="müsterilerId">
-      <div class="container-fluid mt-5 text-center p-3">
-        <div class="5-yazilar">
-          <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x mb-2"></i>
-          <h3>Müşterilerimiz Neler Dedi</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <img src="./images/user-1.jpeg" alt="" />
-          <p class="alt-yazi1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo esse
-            fuga placeat consequuntur, ullam vero odit quaerat aliquam
-            quibusdam! Quidem ex exercitationem repudiandae tempore eligendi ab
-            accusantium culpa non inventore!
-          </p>
-          <p class="alt-yazi2">-Ali <b>Gel</b></p>
+            <div class="col">
+              <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!------------------------------ ALTINCI KISIM BASLIYOR------------------------------>
-    <!--NAVBAR BEHAVIOUR KISMINDA ALINTI-->
-    <div id="referanslar-kismi-boslukId"></div>
-    <!--MENÜ KISMI -->
-    <div class="container-fluid referanslar" id="referanslarId">
-      <header>
-        <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
-        <h3>Referanslarimiz</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </header>
-      <nav class="d-flex">
-        <div class="nav-referanslar nav nav-tabs" id="nav-tab" role="tablist">
-          <button
-            class="nav-link active"
-            id="nav-tümü-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-tümü"
-            type="button"
-            role="tab"
-            aria-controls="nav-tümü"
-            aria-selected="true"
-          >
-            Tümü
-          </button>
-          <button
-            class="nav-link"
-            id="nav-web-tasarim-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-web-tasarim"
-            type="button"
-            role="tab"
-            aria-controls="nav-web-tasarim"
-            aria-selected="false"
-          >
-            Web Tasarim
-          </button>
-          <button
-            class="nav-link"
-            id="nav-grafik-tasarim-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-grafik-tasarim"
-            type="button"
-            role="tab"
-            aria-controls="nav-grafik-tasarim"
-            aria-selected="false"
-          >
-            Grafik Tasarim
-          </button>
-          <button
-            class="nav-link"
-            id="nav-seo-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-seo"
-            type="button"
-            role="tab"
-            aria-controls="nav-seo"
-            aria-selected="false"
-          >
-            SEO
-          </button>
-          <button
-            class="nav-link"
-            id="nav-wordpress-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#nav-wordpress"
-            type="button"
-            role="tab"
-            aria-controls="nav-wordpress"
-            aria-selected="false"
-          >
-            Wordpress
-          </button>
+        <!--GRAFIK TASARIM-->
+        <div class="tab-pane fade" id="nav-grafik-tasarim" role="tabpanel" aria-labelledby="nav-grafik-tasarim-tab"
+          tabindex="0">
+          <div class="grafik-tasarim row row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+              <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
+            </div>
+
+            <div class="col">
+              <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
+            </div>
+          </div>
         </div>
-      </nav>
+        <!--SEO FOTOGRAFLAR-->
 
-      <!--MENÜ KISMI BITIS-->
-
-      <!--RESIMLERIN EKLENDIGI KISIM-->
-      <div class="container text-center">
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="nav-tümü"
-            role="tabpanel"
-            aria-labelledby="nav-tümü-tab"
-            tabindex="0"
-          >
-            <!--TÜMÜ KISMI -->
-            <div
-              class="tüm-resimler row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
-            >
-              <div class="resim1 col mb-3">
-                <img
-                  class="resim1-img img-thumbnail"
-                  src="./images/work-1.jpeg"
-                  alt=""
-                />
-              </div>
-
-              <div class="resim2 col mb-3">
-                <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
-              </div>
-
-              <div class="resim3 col mb-3">
-                <img class="img-thumbnail" src="./images/work-3.jpeg" alt="" />
-              </div>
-
-              <div class="resim4 col mb-3">
-                <img class="img-thumbnail" src="./images/work-4.jpeg" alt="" />
-              </div>
-
-              <div class="resim5 col col-lg-6 mt-lg-2">
-                <img class="img-thumbnail" src="./images/work-5.jpeg" alt="" />
-              </div>
-
-              <div class="resim6 col col-lg-6 mt-lg-2">
-                <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
-              </div>
+        <div class="tab-pane fade" id="nav-seo" role="tabpanel" aria-labelledby="nav-seo-tab" tabindex="0">
+          <div class="seo row row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+              <img class="img-thumbnail" src="./images/work-3.jpeg" alt="" />
+            </div>
+            <div class="col">
+              <img class="img-thumbnail" src="./images/work-4.jpeg" alt="" />
             </div>
           </div>
+        </div>
 
-          <!--WEB TASARIM FOTOGRAFLARI-->
-          <div
-            class="tab-pane fade"
-            id="nav-web-tasarim"
-            role="tabpanel"
-            aria-labelledby="nav-web-tasarim-tab"
-            tabindex="0"
-          >
-            <div class="web-tasarim row row-cols-1 row-cols-md-2">
-              <div class="col mb-3">
-                <img class="img-thumbnail" src="./images/work-1.jpeg" alt="" />
-              </div>
-
-              <div class="col">
-                <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
-              </div>
+        <!-- WORDPRESS FOTOGRAFLAR-->
+        <div class="tab-pane fade" id="nav-wordpress" role="tabpanel" aria-labelledby="nav-wordpress-tab" tabindex="0">
+          <div class="word-press row row-cols-1 row-cols-md-2 wordpress-fotolar">
+            <div class="col mb-3">
+              <img class="img-thumbnail" src="./images/work-5.jpeg" alt="" />
             </div>
-          </div>
-
-          <!--GRAFIK TASARIM-->
-          <div
-            class="tab-pane fade"
-            id="nav-grafik-tasarim"
-            role="tabpanel"
-            aria-labelledby="nav-grafik-tasarim-tab"
-            tabindex="0"
-          >
-            <div class="grafik-tasarim row row-cols-1 row-cols-md-2">
-              <div class="col mb-3">
-                <img class="img-thumbnail" src="./images/work-2.jpeg" alt="" />
-              </div>
-
-              <div class="col">
-                <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
-          <!--SEO FOTOGRAFLAR-->
-
-          <div
-            class="tab-pane fade"
-            id="nav-seo"
-            role="tabpanel"
-            aria-labelledby="nav-seo-tab"
-            tabindex="0"
-          >
-            <div class="seo row row-cols-1 row-cols-md-2">
-              <div class="col mb-3">
-                <img class="img-thumbnail" src="./images/work-3.jpeg" alt="" />
-              </div>
-              <div class="col">
-                <img class="img-thumbnail" src="./images/work-4.jpeg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <!-- WORDPRESS FOTOGRAFLAR-->
-          <div
-            class="tab-pane fade"
-            id="nav-wordpress"
-            role="tabpanel"
-            aria-labelledby="nav-wordpress-tab"
-            tabindex="0"
-          >
-            <div
-              class="word-press row row-cols-1 row-cols-md-2 wordpress-fotolar"
-            >
-              <div class="col mb-3">
-                <img class="img-thumbnail" src="./images/work-5.jpeg" alt="" />
-              </div>
-              <div class="col">
-                <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
-              </div>
+            <div class="col">
+              <img class="img-thumbnail" src="./images/work-6.jpeg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!------------------------------ YEDINCI KISIM(ILETISIM) BASLIYOR------------------------------>
-    <div class="container-fluid iletisim" id="iletisimId">
-      <!-------BASLIK KISMI------->
-      <div class="baslik-7 text-center">
-        <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
-        <h3>Iletisim</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <!-------ICONS KISMI------->
-      <div
-        class="row row-cols-1 row-cols-md-3 icons-7 d-flex text-center mx-auto"
-      >
-        <div class="col telephone">
-          <i class="fa-solid fa-phone-flip fa-2x"></i>
-          <h4>Telefon</h4>
-          <a href="#">+90(555)555 55 55</a>
-        </div>
-        <div class="col whatsappp">
-          <i class="fa-brands fa-whatsapp fa-2x"></i>
-          <h4>Whatsapp</h4>
-          <a href="#">+90(555)555 55 55</a>
-        </div>
-        <div class="col email">
-          <i class="fa-solid fa-envelope fa-2x"></i>
-          <h4>Email</h4>
-          <a href="mailto:dogukan@gmail.com">dogukan@gmail.com</a>
-        </div>
-      </div>
-
-      <form class="row g-3 mx-auto mt-3">
-        <div class="col-md-6">
-          <input
-            type="text"
-            placeholder="Adiniz"
-            class="form-control"
-            id="inputName4"
-          />
-        </div>
-        <div class="col-md-6">
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail4"
-            placeholder="Eposta adresiniz"
-          />
-        </div>
-        <div class="col-12">
-          <input
-            type="text"
-            class="form-control"
-            id="inputKonu"
-            placeholder="Konu"
-          />
-        </div>
-        <div class="col-12 text-area">
-          <textarea
-            placeholder="Mesajiniz"
-            name=""
-            id=""
-            rows="2"
-            class="w-100 ps-2 pt-3"
-          ></textarea>
-        </div>
-        <button class="contact__button">MESAJI GÖNDER</button>
-      </form>
-    </div>
-    <!------------------------------ FOOTER KISIM BASLIYOR------------------------------>
-
-    <footer class="d-flex justify-content-center">
-      <div class="footer__icons">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="copy__part">
-        <p class="text-white">&copy; 2021 copyright by Dogukan</p>
-      </div>
-    </footer>
-
-    <!-------------------- SAG ALT KÖSE SABIT ICONLAR------------->
-
-    <div class="sabit--icon1 text-center">
-      <i class="fa-solid fa-moon"></i>
+  <!------------------------------ YEDINCI KISIM(ILETISIM) BASLIYOR------------------------------>
+  <div class="container-fluid iletisim" id="iletisimId">
+    <!-------BASLIK KISMI------->
+    <div class="baslik-7 text-center">
+      <i class="fa-sharp fa-solid fa-arrow-down-up-lock fa-3x"></i>
+      <h3>Contact Me</h3>
+      <p>Let's discuss your project and bring your ideas to life.</p>
     </div>
 
-    <a href="#sayfa--baslangic"
-      ><div class="sabit--icon2 text-center">
-        <i class="fa-solid fa-arrow-up"></i></div
-    ></a>
-    <!-- Bootstrap JS Linki -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-------ICONS KISMI------->
+    <div class="row row-cols-1 row-cols-md-3 icons-7 d-flex text-center mx-auto">
+      <div class="col telephone">
+        <i class="fa-solid fa-phone-flip fa-2x"></i>
+        <h4>Phone</h4>
+        <a href="tel:+905551234567">+90(555)123 45 67</a>
+      </div>
+      <div class="col whatsappp">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+        <h4>WhatsApp</h4>
+        <a href="https://wa.me/905551234567">+90(555)123 45 67</a>
+      </div>
+      <div class="col email">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <h4>Email</h4>
+        <a href="mailto:fatih@webdesign.com">fatih@webdesign.com</a>
+      </div>
+    </div>
+
+    <form class="row g-3 mx-auto mt-3">
+      <div class="col-md-6">
+        <input type="text" placeholder="Your Name" class="form-control" id="inputName4" />
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email Address" />
+      </div>
+      <div class="col-12">
+        <input type="text" class="form-control" id="inputKonu" placeholder="Subject" />
+      </div>
+      <div class="col-12 text-area">
+        <textarea placeholder="Your Message" name="" id="" rows="2" class="w-100 ps-2 pt-3"></textarea>
+      </div>
+      <button type="submit" class="contact__button">SEND MESSAGE</button>
+    </form>
+  </div>
+  <!------------------------------ FOOTER KISIM BASLIYOR------------------------------>
+
+  <footer class="d-flex justify-content-center">
+    <div class="footer__icons">
+      <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" title="LinkedIn"> <i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="copy__part">
+      <p class="text-white">&copy; 2024 copyright by Fatih - Professional Web Developer</p>
+    </div>
+  </footer>
+
+  <!-------------------- SAG ALT KÖSE SABIT ICONLAR------------->
+
+  <div class="sabit--icon1 text-center">
+    <i class="fa-solid fa-moon"></i>
+  </div>
+
+  <a href="#sayfa--baslangic" title="Back to top">
+    <div class="sabit--icon2 text-center">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  </a>
+  <!-- Bootstrap JS Linki -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
